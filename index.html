@@ -386,6 +386,16 @@
             </li>
           </ul>
         </div>
+        <div class="subscribe-input">
+          <h3 class="subscribe-item">Subscribe</h3>
+          <label for=""></label>
+          <input type="email" class="input-subscribe" placeholder="E-mail" />
+        </div>
+        <div class="btn-footer">
+          <button class="subscribe-btn">
+            <p class="btn-text">Subscribe</p>
+          </button>
+        </div>
       </div>
     </footer>
     <div class="backdrop is-hidden" data-modal>
@@ -402,30 +412,52 @@
           <ul class="modal-list">
             <li>
               <label for="user-name" class="input-items">Name</label>
-              <input
-                type="text"
-                name="name"
-                id="user-name"
-                class="input-modal"
-              />
+              <div class="div-input">
+                <input
+                  type="text"
+                  name="name"
+                  id="user-name"
+                  class="input-modal"
+                />
+                <span class="svg-modal"
+                  ><svg class="svg-modal" height="18px" width="18px">
+                    <use
+                      href="./images/icons.svg#icon-person"
+                      class="svg-modal"
+                    ></use>
+                  </svg>
+                </span>
+              </div>
             </li>
             <li>
               <label for="user-number" class="input-items">Phone</label>
-              <input
-                type="tel"
-                name="tell"
-                id="user-number"
-                class="input-modal"
-              />
+              <div class="div-input">
+                <input
+                  type="tel"
+                  name="tell"
+                  id="user-number"
+                  class="input-modal"
+                />
+                <span class="svg-modal">
+                  <svg class="svg-modal" height="24px" width="18px">
+                    <use href="./images/icons.svg#icon-phone"></use>
+                  </svg>
+                </span>
+              </div>
             </li>
             <li>
               <label for="user-email" class="input-items">Email</label>
-              <input
-                type="email"
-                name="email"
-                id="user-email"
-                class="input-modal"
-              />
+              <div class="div-input">
+                <input
+                  type="email"
+                  name="email"
+                  id="user-email"
+                  class="input-modal"
+                />
+                <span class="svg-modal">
+                  <svg class="svg-modal" height="24px" width="18px">
+                    <use href="./images/icons.svg#icon-email"></use></svg></span>
+              </div>
             </li>
             <li>
               <label for="comment" class="input-items">Comment</label>
@@ -437,8 +469,17 @@
                 id="comment"
               ></textarea>
             </li>
+            <li class="li-checkbox">
+              <label for="checkbox" class="input-items checkbox-item">
+                <input name="checkbox" type="checkbox" class="check-mark" id="checkbox"/>
+                <span class="checkbox-icon"></span> <span class="checkbox-text">
+                I accept the terms and conditions of the
+                <a href="" class="link-privacy">Privacy Policy</a></span></label
+              >
+            </li>
           </ul>
         </form>
+        <button class="button send"><p>Send</p></button>
       </div>
     </div>
     <script src="./js/modal.js"></script>
