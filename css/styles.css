@@ -816,8 +816,12 @@ padding-left: 38px;
   padding-bottom: 11px;
   height: 40px;
   width: 360px;
-  border: 1px solid rgba(33, 33, 33, 0.2);
+  outline: 1px solid rgba(33, 33, 33, 0.2);
+  border: 0;
   border-radius: 4px;
+  transition-property: outline;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .input-modal:hover,
@@ -842,6 +846,9 @@ padding-left: 38px;
 left: 8px;
 top: 5px;
 fill: var(--DarkColor);
+transition-property: fill;
+transition-duration: 250ms;
+transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .div-input:focus-within .svg-modal{
@@ -854,8 +861,11 @@ fill: var(--DarkColor);
   height: 120px;
   width: 360px;
   resize: none;
-  border: 1px solid rgba(33, 33, 33, 0.2);
+  outline: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
+  transition-property: outline;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .text-area:hover,
